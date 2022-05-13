@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "description": "A tiny utility for adding HTML event listeners",
   "type": "module",
-  "main": "out/index.js",
+  "main": "index.js",
 	"types": "./index.d.ts",
 	"keywords": [],
 	"author": "Binyamin Aron Green (https://binyam.in/)",
 	"license": "MIT",
   "scripts": {
-    "start": "esbuild index.js --bundle --minify --tree-shaking --format=esm --platform=browser --outdir=out",
+    "build": "esbuild index.js --bundle --minify --tree-shaking --format=esm --platform=browser --outdir=out",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
