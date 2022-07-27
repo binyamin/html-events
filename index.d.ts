@@ -1,7 +1,9 @@
+/// <reference lib="dom" />
+
 export function handle(
 	event: keyof HTMLElementEventMap,
 	selector: keyof HTMLElementTagNameMap,
-	listener: EventListenerOrEventListenerObject
+	listener: EventListenerOrEventListenerObject,
 ): void;
 
 export const on: Record<
@@ -11,10 +13,9 @@ export const on: Record<
 	| 'blur'
 	| 'submit'
 	| 'keyup'
-	| 'focus'
-,
+	| 'focus',
 	(
 		selector: keyof HTMLElementTagNameMap,
-		listener: EventListenerOrEventListenerObject
+		listener: EventListenerOrEventListenerObject,
 	) => void
 >;
