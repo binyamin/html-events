@@ -10,7 +10,10 @@ export function handle(
 ): void;
 
 interface OnHandler {
-	(selector: keyof HTMLElementTagNameMap, listener: EventListenerOrEventListenerObject): void;
+	(
+		selector: keyof HTMLElementTagNameMap,
+		listener: EventListenerOrEventListenerObject,
+	): void;
 	(selector: string, listener: EventListenerOrEventListenerObject): void;
 }
 
